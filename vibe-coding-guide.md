@@ -1,6 +1,7 @@
 # Ultimate Guide to Vibe Coding V1.0
 **Author:** [Nicolas Zullo, https://x.com/NicolasZu](https://x.com/NicolasZu)  
 **Date:** March 12, 2025  
+**Original link:** [Ultimate Guide to Vibe Coding V1.0](https://github.com/EnzeD/vibe-coding/blob/main/README.md)
 
 ---
 
@@ -115,3 +116,107 @@ Congratulations, you’ve built the base game! It might be rough and lack featur
 **A:** Ask Grok 3.
 
 ---
+
+# 中文版
+
+> **作者：** [Nicolas Zullo](https://x.com/NicolasZu)  
+> **发布日期：** 2025年3月12日  
+> **原始链接：** [Ultimate Guide to Vibe Coding V1.0](https://github.com/EnzeD/vibe-coding/blob/main/README.md)
+> 
+> **说明：** 虽然文档是针对游戏开发的，但是它也适用于其他类型的项目，如网站、应用程序等。
+
+## 开始
+开始氛围编码，你只需要两个工具：
+- Grok 3 Thinking
+- Claude Sonnet 3.7 Thinking
+
+正确设置一切是关键。如果你真的想创建一个功能齐全且视觉上吸引人的游戏，那就花时间建立一个坚实的基础。
+
+**关键原则：**规划就是一切。不要让人工智能自主规划，否则你的代码库将变成一个无法管理的烂摊子。
+
+## 规划
+### 1. 游戏设计文档
+- 梳理游戏创意：先明确自己的游戏构思，然后借助Grok 3 Thinking工具，以Markdown格式（.md）生成一份基础的游戏设计文档。
+- 审核与完善：仔细检查这份文档，依据自己对游戏的设想进行优化，确保文档能够准确体现游戏的架构和设计意图。即便文档初步呈现得较为简单也无妨，重点在于为人工智能提供关于游戏结构与目的的相关背景信息。 
+
+### 2. 技术栈与`.cursor/rules`
+- 让Grok 3 Thinking为你的游戏推荐最佳技术栈（例如，对于多人3D游戏，可能会推荐ThreeJS和WebSocket。）
+  - 向它发起挑战，让它提出尽可能简单却又强大的技术栈。
+- 从[https://docs.cursor.com/context/rules-for-ai](https://docs.cursor.com/context/rules-for-ai)下载PDF版本的规则文档，上传该文档，并让Grok站在擅长你所选技术栈的资深游戏开发者角度，为Cursor编写一套6到10条的规则。
+  - 确保其中有一条规则强调模块化（多个文件），避免整体式架构（一个巨大文件）。
+  - 例如，规则可以涵盖网络方面的最佳实践。
+  - 如果你想要打造一款尽可能优化且代码尽可能整洁的游戏，这一步是必不可少的。 
+
+### 3. 实施计划
+- 向Grok 3 Thinking提供以下内容：
+  - 游戏设计文档
+  - 技术栈建议
+  - `.cursor/rules`
+- 要求它以Markdown（.md）格式创建一份详细的实施计划，该计划将为人工智能开发人员提供逐步的操作指南。
+  - 步骤要具体且细化。
+  - 每个步骤都必须包含用于验证正确实施的测试方法。
+  - 不要涉及代码，只需提供清晰、具体的说明。
+  - 重点关注基础游戏，而非完整的功能集（后续再详细阐述功能细节）。 
+
+### 4. 记忆库（Memory Bank）
+- 创建一个新文件夹，使用Cursor软件打开该文件夹，在打开的文件夹内，再创建一个新文件夹，并将其命名为`memory-bank`。
+- 向`memory-bank`文件夹中添加以下文件：
+    - `game-design-document.md`：用于记录游戏设计文档。
+    - `tech-stack.md`：用来阐述技术栈相关内容。
+    - `implementation-plan.md`：实现计划文档。
+    - `progress.md`：用于追踪已完成步骤，方便掌握进度。
+    - `architecture.md`：对文件用途进行记录说明，方便理解架构相关信息。 
+
+### 5. 设置`.cursor/rules`
+- 在Cursor中，同时按下`Cmd + Shift + P`，接着输入`rules`，然后按回车键。
+- 将**步骤2**中Grok 3生成的规则输入进去。 
+
+## 开发基础版游戏
+现在，欢乐之旅开启啦！ 
+
+### 确保一切都清晰明了
+- 在 Cursor 中选择**Claude Sonnet 3.7 Thinking**。
+- Prompt：阅读`/memory-bank`中的所有文档，`implementation-plan.md`是否清晰？为了让它对你来说 100% 清晰，你有哪些问题？
+- 它通常会问 9 到 10 个问题，回答这些问题并提示他相应地编辑`implementation-plan.md`，这样会更好。
+
+### 第一条开发 Prompt
+- 在 Cursor 中选择**Claude Sonnet 3.7 Thinking**。
+- Prompt：阅读`/memory-bank`中的所有文档，并执行**实施计划**的第 1 步，我将运行测试。在我验证测试之前，不要开始第 2 步。一旦我验证了它们，打开progress.md并为未来的开发人员记录你所做的事情，然后将任何架构见解添加到`architecture.md`中，以解释每个文件的作用。
+- **极致开发体验：** 安装[Superwhisper](https://superwhisper.com/)，以便与 Claude 轻松交谈，而不是打字。
+
+### 工作流程
+完成**实施计划**的第1步后：
+- 将你的修改提交至Git（若不熟悉操作，可向Grok 3寻求帮助）。
+- 新建一个编辑器（快捷键为Cmd + N或Cmd + I）。
+- Prompt：接着浏览`/memory-bank`中的所有文件，阅读`progress.md`以了解之前的工作内容，然后继续进行`implementation-plan.md`中的步骤2。在我验证测试通过之前，请勿开始步骤3。
+- 持续重复此流程，直至整个`implementation-plan.md`完成。 
+
+### 完善细节
+恭喜你，基础游戏已经搭建完成！它可能还比较粗糙，功能也有所欠缺，但现在你可以进行试验并优化它了。
+
+- 你想要添加雾气、后期处理效果、特效或者音效吗？想要更精美的飞机、汽车或者城堡模型吗？又或是想要打造一片绚丽的天空？
+- 针对每一项主要功能，创建一个新的`feature-implementation.md`文件，在其中简要列出实现步骤和测试方法。
+- 逐步实现这些功能并进行测试。 
+
+### 修复错误和卡顿
+- 如果提示失败或导致游戏中断：
+  - 在 Cursor 中点击“restore”并优化你的提示词，直到其正常工作。
+- 对于错误：
+  - 如果是 JavaScript：打开控制台（F12），复制错误信息，并将其粘贴到 Cursor 中；或者提供屏幕截图以显示视觉故障。
+  - 偷懒的选择：安装 [BrowserTools](https://browsertools.agentdesk.ai/installation) 以跳过手动复制。
+- 如果卡住了：
+  - 恢复到上一个 Git 提交（git reset）并使用新的提示词重试。
+- 如果真的卡住了：
+  - 使用[RepoPrompt](https://repoprompt.com/)并向 Grok 3 Thinking 寻求帮助。
+
+## 其他建议
+- **小幅编辑**：一次仅小幅修改一个功能，可选用Claude Sonnet 3.5。
+- **出色的文案创作**：推荐使用GPT-4.5版本。
+- **优化提示词输出**：添加这句话“请花足够时间把事情做对，我不赶时间。关键在于你要精准按照我的要求执行，力求完美。若我的要求不够精确，尽管向我提问。” 
+
+## 常见问题解答
+**问**：你的飞机模型太棒了，可我没办法用一个指令就复制出来！
+**答**：这不是一个指令能完成的，大概需要30个指令，参照`plane-implementation.md`文件来操作。要用精准明确的指令，比如“在机翼上留出空间安装副翼”，而不是像“制作一架飞机”这种模糊的指令。
+
+**问**：我不知道怎么为我的多人游戏搭建服务器。
+**答**：向Grok 3咨询。 

@@ -7,7 +7,7 @@
 *   **视觉吸引力：** 创造一个在视觉上令人印象深刻的网页，能够立即吸引用户的注意力，并激发他们的阅读兴趣。
 *   **可读性：** 确保内容清晰易读，无论在桌面端还是移动端，都能提供舒适的阅读体验。
 *   **信息传达：** 以一种既美观又高效的方式呈现信息，突出关键内容，引导用户理解核心思想。
-*   **情感共鸣:** 通过设计激发与内容主题相关的情感（例如，对于励志内容，激发积极向上的情绪；对于严肃内容，营造庄重、专业的氛围）。
+*   **情感共鸣：** 通过设计激发与内容主题相关的情感（例如，对于励志内容，激发积极向上的情绪；对于严肃内容，营造庄重、专业的氛围）。
 
 **设计指导（请灵活运用，而非严格遵循）：**
 
@@ -17,7 +17,7 @@
     *   精心选择字体组合（衬线和无衬线），以提升中文阅读体验。
     *   利用不同的字号、字重、颜色和样式，创建清晰的视觉层次结构。
     *   可以考虑使用一些精致的排版细节（如首字下沉、悬挂标点）来提升整体质感。
-    *   Font-Awesome中有很多图标，选合适的点缀增加趣味性。
+    *   Font-Awesome 中有很多图标，选合适的点缀增加趣味性。
 *   **配色方案：**
     *   选择一套既和谐又具有视觉冲击力的配色方案。
     *   考虑使用高对比度的颜色组合来突出重要元素。
@@ -26,22 +26,22 @@
     *   使用基于网格的布局系统来组织页面元素。
     *   充分利用负空间（留白），创造视觉平衡和呼吸感。
     *   可以考虑使用卡片、分割线、图标等视觉元素来分隔和组织内容。
-*   **调性：** 整体风格精致, 营造一种高级感。
+*   **调性：** 整体风格精致，营造一种高级感。
 *   **数据可视化：** 
     *   设计一个或多个数据可视化元素，展示内容中的关键概念和它们之间的关系。
     *   可以考虑使用思想导图、概念关系图、时间线或主题聚类展示等方式。
     *   确保可视化设计既美观又有洞察性，帮助用户更直观地理解内容中思想体系的整体框架。
-    *   使用Mermaid.js来实现交互式图表，允许用户探索不同概念之间的关联。
-    *   考虑使用p5.js来创建动态艺术或者图表，帮助用户理解内容。
+    *   使用 Mermaid.js 来实现交互式图表，允许用户探索不同概念之间的关联。
+    *   考虑使用 p5.js 来创建动态艺术或者图表，帮助用户理解内容。
 
 **技术规范：**
 
 *   使用 HTML5、Font Awesome、Tailwind CSS 和必要的 JavaScript。
     *   Font Awesome: [https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css](https://cdn.staticfile.org/font-awesome/6.4.0/css/all.min.css)
-    *   Tailwind CSS: [https://unpkg.com/@tailwindcss/browser@4](https://unpkg.com/@tailwindcss/browser@4)
-    *   非中文字体: [https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap)
+    *   Tailwind CSS: [https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css](https://cdn.staticfile.org/tailwindcss/2.2.19/tailwind.min.css)
+    *   非中文字体：[https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap](https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap)
     *   `font-family: Tahoma,Arial,Roboto,"Droid Sans","Helvetica Neue","Droid Sans Fallback","Heiti SC","Hiragino Sans GB",Simsun,sans-self;`
-    *   Mermaid: [https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js)
+    *   Mermaid: [https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js](https://cdn.jsdelivr.net/npm/mermaid@latest/dist/mermaid.min.js)
     *   p5.js: [https://cdn.jsdelivr.net/npm/p5/lib/p5.min.js](https://cdn.jsdelivr.net/npm/p5/lib/p5.min.js)
 *   实现完整的深色/浅色模式切换功能，默认跟随系统设置，并允许用户手动切换。
 *   代码结构清晰、语义化，包含适当的注释。
@@ -51,7 +51,7 @@
 
 *   **微交互：** 添加微妙而有意义的微交互效果来提升用户体验（例如，按钮悬停效果、卡片悬停效果、页面滚动效果）。
 *   **补充信息：** 可以主动搜索并补充其他重要信息或模块（例如，关键概念的解释、相关人物的介绍等），以增强用户对内容的理解。
-*   **延伸阅读:** 分析文件后，提供一份"进一步阅读"的简短清单，推荐 5 本最佳相关书籍或论文，并提供简要说明或链接。
+*   **延伸阅读：** 分析文件后，提供一份"进一步阅读"的简短清单，推荐 5 本最佳相关书籍或论文，并提供简要说明或链接。
 
 **输出要求：**
 
